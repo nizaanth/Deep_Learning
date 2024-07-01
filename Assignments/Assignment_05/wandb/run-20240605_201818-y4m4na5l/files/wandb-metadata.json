@@ -1,0 +1,39 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.1",
+    "heartbeatAt": "2024-06-05T18:18:24.271794",
+    "startedAt": "2024-06-05T18:18:18.378629",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "Documents/Semester_4/Deep_Learning/Lecture_slides/Assignment/Assignment_05/Assignment_05.ipynb",
+    "codePathLocal": null,
+    "root": "C:\\Users\\Lenovo",
+    "host": "DESKTOP-DFND7D0",
+    "username": "Lenovo",
+    "executable": "C:\\Users\\Lenovo\\nizaanth\\python.exe",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2803.0,
+        "min": 0.0,
+        "max": 2904.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2803.0,
+            "min": 0.0,
+            "max": 2904.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 476.37468338012695,
+            "used": 267.1527633666992
+        }
+    },
+    "memory": {
+        "total": 23.651668548583984
+    }
+}

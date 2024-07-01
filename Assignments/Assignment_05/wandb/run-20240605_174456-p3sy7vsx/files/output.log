@@ -1,0 +1,191 @@
+^C
+Note: you may need to restart the kernel to use updated packages.
+Collecting tensorflow-datasets
+  Downloading tensorflow_datasets-4.9.6-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: absl-py in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (2.1.0)
+Requirement already satisfied: click in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (8.1.7)
+Collecting dm-tree (from tensorflow-datasets)
+  Downloading dm_tree-0.1.8-cp311-cp311-win_amd64.whl.metadata (2.0 kB)
+Collecting immutabledict (from tensorflow-datasets)
+  Downloading immutabledict-4.2.0-py3-none-any.whl.metadata (3.4 kB)
+Requirement already satisfied: numpy in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (1.25.2)
+Collecting promise (from tensorflow-datasets)
+  Downloading promise-2.3.tar.gz (19 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: protobuf>=3.20 in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (4.25.3)
+Requirement already satisfied: psutil in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (5.9.7)
+Requirement already satisfied: pyarrow in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (12.0.1)
+Requirement already satisfied: requests>=2.19.0 in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (2.31.0)
+Collecting simple-parsing (from tensorflow-datasets)
+  Downloading simple_parsing-0.1.5-py3-none-any.whl.metadata (7.7 kB)
+Collecting tensorflow-metadata (from tensorflow-datasets)
+  Downloading tensorflow_metadata-1.15.0-py3-none-any.whl.metadata (2.4 kB)
+Requirement already satisfied: termcolor in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (2.4.0)
+Collecting toml (from tensorflow-datasets)
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting tqdm (from tensorflow-datasets)
+  Downloading tqdm-4.66.4-py3-none-any.whl.metadata (57 kB)
+     ---------------------------------------- 0.0/57.6 kB ? eta -:--:--
+     ---------------------------------------- 57.6/57.6 kB 3.0 MB/s eta 0:00:00
+Requirement already satisfied: wrapt in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (1.14.1)
+Collecting etils>=1.9.1 (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets)
+  Downloading etils-1.9.1-py3-none-any.whl.metadata (6.4 kB)
+Collecting fsspec (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets)
+  Downloading fsspec-2024.6.0-py3-none-any.whl.metadata (11 kB)
+Collecting importlib_resources (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets)
+  Downloading importlib_resources-6.4.0-py3-none-any.whl.metadata (3.9 kB)
+Requirement already satisfied: typing_extensions in c:\users\lenovo\nizaanth\lib\site-packages (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets) (4.9.0)
+Collecting zipp (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets)
+  Downloading zipp-3.19.2-py3-none-any.whl.metadata (3.6 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\lenovo\nizaanth\lib\site-packages (from requests>=2.19.0->tensorflow-datasets) (3.2.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\lenovo\nizaanth\lib\site-packages (from requests>=2.19.0->tensorflow-datasets) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\lenovo\nizaanth\lib\site-packages (from requests>=2.19.0->tensorflow-datasets) (2.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\lenovo\nizaanth\lib\site-packages (from requests>=2.19.0->tensorflow-datasets) (2023.7.22)
+Requirement already satisfied: colorama in c:\users\lenovo\nizaanth\lib\site-packages (from click->tensorflow-datasets) (0.4.6)
+Requirement already satisfied: six in c:\users\lenovo\nizaanth\lib\site-packages (from promise->tensorflow-datasets) (1.16.0)
+Collecting docstring-parser~=0.15 (from simple-parsing->tensorflow-datasets)
+  Downloading docstring_parser-0.16-py3-none-any.whl.metadata (3.0 kB)
+Collecting googleapis-common-protos<2,>=1.56.4 (from tensorflow-metadata->tensorflow-datasets)
+  Downloading googleapis_common_protos-1.63.1-py2.py3-none-any.whl.metadata (1.5 kB)
+Downloading tensorflow_datasets-4.9.6-py3-none-any.whl (5.1 MB)
+   ---------------------------------------- 0.0/5.1 MB ? eta -:--:--
+   - -------------------------------------- 0.1/5.1 MB 4.3 MB/s eta 0:00:02
+   --- ------------------------------------ 0.4/5.1 MB 4.9 MB/s eta 0:00:01
+   ---- ----------------------------------- 0.6/5.1 MB 5.4 MB/s eta 0:00:01
+   -------- ------------------------------- 1.1/5.1 MB 6.4 MB/s eta 0:00:01
+   ----------- ---------------------------- 1.5/5.1 MB 6.6 MB/s eta 0:00:01
+   -------------- ------------------------- 1.8/5.1 MB 7.2 MB/s eta 0:00:01
+   ---------------- ----------------------- 2.2/5.1 MB 6.9 MB/s eta 0:00:01
+   ---------------- ----------------------- 2.2/5.1 MB 6.9 MB/s eta 0:00:01
+   ----------------- ---------------------- 2.3/5.1 MB 6.0 MB/s eta 0:00:01
+   ------------------ --------------------- 2.3/5.1 MB 5.2 MB/s eta 0:00:01
+   ------------------ --------------------- 2.3/5.1 MB 5.2 MB/s eta 0:00:01
+   ------------------ --------------------- 2.3/5.1 MB 5.2 MB/s eta 0:00:01
+   --------------------- ------------------ 2.8/5.1 MB 4.9 MB/s eta 0:00:01
+   ---------------------- ----------------- 2.9/5.1 MB 4.6 MB/s eta 0:00:01
+   ----------------------- ---------------- 2.9/5.1 MB 4.6 MB/s eta 0:00:01
+   ----------------------- ---------------- 3.0/5.1 MB 4.4 MB/s eta 0:00:01
+   ------------------------ --------------- 3.1/5.1 MB 4.1 MB/s eta 0:00:01
+   ------------------------ --------------- 3.2/5.1 MB 3.9 MB/s eta 0:00:01
+   ------------------------ --------------- 3.2/5.1 MB 3.9 MB/s eta 0:00:01
+   --------------------------- ------------ 3.5/5.1 MB 3.9 MB/s eta 0:00:01
+   --------------------------- ------------ 3.5/5.1 MB 3.8 MB/s eta 0:00:01
+   ----------------------------- ---------- 3.7/5.1 MB 3.7 MB/s eta 0:00:01
+   ----------------------------- ---------- 3.8/5.1 MB 3.7 MB/s eta 0:00:01
+   ------------------------------ --------- 3.8/5.1 MB 3.6 MB/s eta 0:00:01
+   -------------------------------- ------- 4.1/5.1 MB 3.6 MB/s eta 0:00:01
+   -------------------------------- ------- 4.1/5.1 MB 3.4 MB/s eta 0:00:01
+   -------------------------------- ------- 4.1/5.1 MB 3.4 MB/s eta 0:00:01
+   -------------------------------- ------- 4.2/5.1 MB 3.3 MB/s eta 0:00:01
+   --------------------------------- ------ 4.2/5.1 MB 3.2 MB/s eta 0:00:01
+   --------------------------------- ------ 4.2/5.1 MB 3.1 MB/s eta 0:00:01
+   --------------------------------- ------ 4.3/5.1 MB 3.0 MB/s eta 0:00:01
+   ---------------------------------- ----- 4.4/5.1 MB 3.0 MB/s eta 0:00:01
+   ----------------------------------- ---- 4.5/5.1 MB 3.0 MB/s eta 0:00:01
+   ----------------------------------- ---- 4.5/5.1 MB 2.9 MB/s eta 0:00:01
+   ----------------------------------- ---- 4.6/5.1 MB 2.9 MB/s eta 0:00:01
+   ------------------------------------ --- 4.7/5.1 MB 2.8 MB/s eta 0:00:01
+   -------------------------------------- - 4.9/5.1 MB 2.9 MB/s eta 0:00:01
+   -------------------------------------- - 4.9/5.1 MB 2.8 MB/s eta 0:00:01
+   -------------------------------------- - 5.0/5.1 MB 2.8 MB/s eta 0:00:01
+   ---------------------------------------  5.0/5.1 MB 2.7 MB/s eta 0:00:01
+   ---------------------------------------  5.1/5.1 MB 2.7 MB/s eta 0:00:01
+   ---------------------------------------- 5.1/5.1 MB 2.7 MB/s eta 0:00:00
+Downloading etils-1.9.1-py3-none-any.whl (161 kB)
+   ---------------------------------------- 0.0/161.1 kB ? eta -:--:--
+   ----------------- ---------------------- 71.7/161.1 kB 2.0 MB/s eta 0:00:01
+   ---------------------------------------- 161.1/161.1 kB 1.6 MB/s eta 0:00:00
+Downloading dm_tree-0.1.8-cp311-cp311-win_amd64.whl (101 kB)
+   ---------------------------------------- 0.0/101.3 kB ? eta -:--:--
+   ---------------------------------------- 101.3/101.3 kB 2.9 MB/s eta 0:00:00
+Downloading immutabledict-4.2.0-py3-none-any.whl (4.7 kB)
+Downloading simple_parsing-0.1.5-py3-none-any.whl (113 kB)
+   ---------------------------------------- 0.0/113.6 kB ? eta -:--:--
+   ---------- ----------------------------- 30.7/113.6 kB ? eta -:--:--
+   ---------------------------- ----------- 81.9/113.6 kB 1.1 MB/s eta 0:00:01
+   ---------------------------------------- 113.6/113.6 kB 1.1 MB/s eta 0:00:00
+Downloading tensorflow_metadata-1.15.0-py3-none-any.whl (28 kB)
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Downloading tqdm-4.66.4-py3-none-any.whl (78 kB)
+   ---------------------------------------- 0.0/78.3 kB ? eta -:--:--
+   ---------------------------------------- 78.3/78.3 kB 2.1 MB/s eta 0:00:00
+Downloading docstring_parser-0.16-py3-none-any.whl (36 kB)
+Downloading googleapis_common_protos-1.63.1-py2.py3-none-any.whl (229 kB)
+   ---------------------------------------- 0.0/229.2 kB ? eta -:--:--
+   ---------------- ----------------------- 92.2/229.2 kB 2.6 MB/s eta 0:00:01
+   ---------------------------------------- 229.2/229.2 kB 2.8 MB/s eta 0:00:00
+Downloading fsspec-2024.6.0-py3-none-any.whl (176 kB)
+   ---------------------------------------- 0.0/176.9 kB ? eta -:--:--
+   ------------- -------------------------- 61.4/176.9 kB 3.4 MB/s eta 0:00:01
+   --------------------------- ------------ 122.9/176.9 kB 1.4 MB/s eta 0:00:01
+   ---------------------------------------- 176.9/176.9 kB 1.5 MB/s eta 0:00:00
+Downloading importlib_resources-6.4.0-py3-none-any.whl (38 kB)
+Downloading zipp-3.19.2-py3-none-any.whl (9.0 kB)
+Building wheels for collected packages: promise
+  Building wheel for promise (setup.py): started
+  Building wheel for promise (setup.py): finished with status 'done'
+  Created wheel for promise: filename=promise-2.3-py3-none-any.whl size=21544 sha256=5af9b500afaf88302d21639cd554850678221989407ea1334fabdcdb060923b3
+  Stored in directory: c:\users\lenovo\appdata\local\pip\cache\wheels\90\74\b1\9b54c896b8d9409e9268329d4d45ede8a8040abe91c8879932
+Successfully built promise
+Installing collected packages: dm-tree, zipp, tqdm, toml, promise, importlib_resources, immutabledict, googleapis-common-protos, fsspec, etils, docstring-parser, tensorflow-metadata, simple-parsing, tensorflow-datasets
+Successfully installed dm-tree-0.1.8 docstring-parser-0.16 etils-1.9.1 fsspec-2024.6.0 googleapis-common-protos-1.63.1 immutabledict-4.2.0 importlib_resources-6.4.0 promise-2.3 simple-parsing-0.1.5 tensorflow-datasets-4.9.6 tensorflow-metadata-1.15.0 toml-0.10.2 tqdm-4.66.4 zipp-3.19.2
+Requirement already satisfied: tensorflow-datasets in c:\users\lenovo\nizaanth\lib\site-packages (4.9.6)
+Requirement already satisfied: absl-py in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (2.1.0)
+Requirement already satisfied: click in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (8.1.7)
+Requirement already satisfied: dm-tree in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (0.1.8)
+Requirement already satisfied: immutabledict in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (4.2.0)
+Requirement already satisfied: numpy in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (1.25.2)
+Requirement already satisfied: promise in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (2.3)
+Requirement already satisfied: protobuf>=3.20 in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (4.25.3)
+Requirement already satisfied: psutil in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (5.9.7)
+Requirement already satisfied: pyarrow in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (12.0.1)
+Requirement already satisfied: requests>=2.19.0 in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (2.31.0)
+Requirement already satisfied: simple-parsing in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (0.1.5)
+Requirement already satisfied: tensorflow-metadata in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (1.15.0)
+Requirement already satisfied: termcolor in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (2.4.0)
+Requirement already satisfied: toml in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (0.10.2)
+Requirement already satisfied: tqdm in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (4.66.4)
+Requirement already satisfied: wrapt in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-datasets) (1.14.1)
+Requirement already satisfied: etils>=1.9.1 in c:\users\lenovo\nizaanth\lib\site-packages (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets) (1.9.1)
+Requirement already satisfied: fsspec in c:\users\lenovo\nizaanth\lib\site-packages (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets) (2024.6.0)
+Requirement already satisfied: importlib_resources in c:\users\lenovo\nizaanth\lib\site-packages (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets) (6.4.0)
+Requirement already satisfied: typing_extensions in c:\users\lenovo\nizaanth\lib\site-packages (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets) (4.9.0)
+Requirement already satisfied: zipp in c:\users\lenovo\nizaanth\lib\site-packages (from etils[enp,epath,epy,etree]>=1.9.1; python_version >= "3.11"->tensorflow-datasets) (3.19.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\lenovo\nizaanth\lib\site-packages (from requests>=2.19.0->tensorflow-datasets) (3.2.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\lenovo\nizaanth\lib\site-packages (from requests>=2.19.0->tensorflow-datasets) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\lenovo\nizaanth\lib\site-packages (from requests>=2.19.0->tensorflow-datasets) (2.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\lenovo\nizaanth\lib\site-packages (from requests>=2.19.0->tensorflow-datasets) (2023.7.22)
+Requirement already satisfied: colorama in c:\users\lenovo\nizaanth\lib\site-packages (from click->tensorflow-datasets) (0.4.6)
+Requirement already satisfied: six in c:\users\lenovo\nizaanth\lib\site-packages (from promise->tensorflow-datasets) (1.16.0)
+Requirement already satisfied: docstring-parser~=0.15 in c:\users\lenovo\nizaanth\lib\site-packages (from simple-parsing->tensorflow-datasets) (0.16)
+Requirement already satisfied: googleapis-common-protos<2,>=1.56.4 in c:\users\lenovo\nizaanth\lib\site-packages (from tensorflow-metadata->tensorflow-datasets) (1.63.1)
+[1mDownloading and preparing dataset Unknown size (download: Unknown size, generated: Unknown size, total: Unknown size) to C:\Users\Lenovo\tensorflow_datasets\eurosat\rgb\2.0.0...
+[1mDataset eurosat downloaded and prepared to C:\Users\Lenovo\tensorflow_datasets\eurosat\rgb\2.0.0. Subsequent calls will reuse this data.
+Model: "vgg16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_6 (InputLayer)        [(None, 160, 160, 3)]     0
+ block1_conv1 (Conv2D)       (None, 160, 160, 64)      1792
+ block1_conv2 (Conv2D)       (None, 160, 160, 64)      36928
+ block1_pool (MaxPooling2D)  (None, 80, 80, 64)        0
+ block2_conv1 (Conv2D)       (None, 80, 80, 128)       73856
+ block2_conv2 (Conv2D)       (None, 80, 80, 128)       147584
+ block2_pool (MaxPooling2D)  (None, 40, 40, 128)       0
+ block3_conv1 (Conv2D)       (None, 40, 40, 256)       295168
+ block3_conv2 (Conv2D)       (None, 40, 40, 256)       590080
+ block3_conv3 (Conv2D)       (None, 40, 40, 256)       590080
+ block3_pool (MaxPooling2D)  (None, 20, 20, 256)       0
+ block4_conv1 (Conv2D)       (None, 20, 20, 512)       1180160
+ block4_conv2 (Conv2D)       (None, 20, 20, 512)       2359808
+ block4_conv3 (Conv2D)       (None, 20, 20, 512)       2359808
+ block4_pool (MaxPooling2D)  (None, 10, 10, 512)       0
+ block5_conv1 (Conv2D)       (None, 10, 10, 512)       2359808
+ block5_conv2 (Conv2D)       (None, 10, 10, 512)       2359808
+ block5_conv3 (Conv2D)       (None, 10, 10, 512)       2359808
+ block5_pool (MaxPooling2D)  (None, 5, 5, 512)         0
+=================================================================
+Total params: 14714688 (56.13 MB)
+Trainable params: 14714688 (56.13 MB)
+Non-trainable params: 0 (0.00 Byte)

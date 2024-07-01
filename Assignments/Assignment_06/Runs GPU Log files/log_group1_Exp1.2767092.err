@@ -1,0 +1,251 @@
+2024-06-27 05:07:42.519933: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-06-27 05:07:42.520600: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-06-27 05:07:42.522285: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-06-27 05:07:42.531496: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-27 05:07:43.793954: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-06-27 05:12:20.139210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15520 MB memory:  -> device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0
+2024-06-27 05:12:20.140288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 15520 MB memory:  -> device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:84:00.0, compute capability: 6.0
+2024-06-27 05:12:20.141347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 15520 MB memory:  -> device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 6.0
+wandb: Currently logged in as: nizaanth (nizaanth-raja). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.17.3
+wandb: Run data is saved locally in /beegfs/work/i1000664/group1/Assignment_06/wandb/run-20240627_051222-5txcj61m
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run Semantic Segmantation - Experiment 1
+wandb: ⭐️ View project at https://wandb.ai/nizaanth-raja/Semantic%20Segmentation
+wandb: 🚀 View run at https://wandb.ai/nizaanth-raja/Semantic%20Segmentation/runs/5txcj61m
+2024-06-27 05:12:29.010525: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:961] layout failed: INVALID_ARGUMENT: Size of values 0 does not match size of permutation 4 @ fanin shape inmodel/dropout/dropout/SelectV2-2-TransposeNHWCToNCHW-LayoutOptimizer
+2024-06-27 05:12:30.165330: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:454] Loaded cuDNN version 8904
+2024-06-27 05:12:36.443306: I external/local_xla/xla/service/service.cc:168] XLA service 0x2b89102f2cf0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-06-27 05:12:36.614035: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-06-27 05:12:36.854920: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (1): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-06-27 05:12:36.855474: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (2): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-06-27 05:12:36.863493: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1719457957.051118   11691 device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+WARNING:tensorflow:Can save best model only with val_miou available, skipping.
+WARNING:tensorflow:Early stopping conditioned on metric `val_miou` which is not available. Available metrics are: loss,accuracy,iou,val_loss,val_accuracy,val_iou
+wandb: - 0.003 MB of 0.003 MB uploadedwandb: \ 0.003 MB of 0.358 MB uploadedwandb: | 0.358 MB of 0.358 MB uploadedwandb: 
+wandb: Run history:
+wandb:      epoch/accuracy ▁▄▅▅▅▆▆▆▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇█████████████████
+wandb:         epoch/epoch ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:           epoch/iou ▁▃▃▄▄▅▅▅▅▆▆▆▆▆▇▆▆▇▇▇▇▇▇▇▇▇▇▇█▇█▇██▇█████
+wandb: epoch/learning_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          epoch/loss █▅▅▄▄▄▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▂▁▁▁▁▁▁▂▁▁▁▁▁
+wandb:  epoch/val_accuracy ▁▂▃▅▅▆▆▆▇▆▆▇▇▇▇▇▇██▇███▇▇█▇▇██▇█████▇▇█▇
+wandb:       epoch/val_iou ▁▂▃▄▅▅▅▅▆▆▆▇▇▇▇▇▇██▇▇██▇▇█▇▇██▇█████▇▇█▇
+wandb:      epoch/val_loss █▇▅▄▃▃▃▄▂▃▃▂▄▃▄▂▃▁▂▃▁▁▁▃▃▂▃▂▂▁▂▁▂▁▁▂▃▃▂▃
+wandb: 
+wandb: Run summary:
+wandb:      epoch/accuracy 0.86931
+wandb:         epoch/epoch 99
+wandb:           epoch/iou 0.73675
+wandb: epoch/learning_rate 0.001
+wandb:          epoch/loss 0.3359
+wandb:  epoch/val_accuracy 0.74321
+wandb:       epoch/val_iou 0.47577
+wandb:      epoch/val_loss 0.69502
+wandb: 
+wandb: 🚀 View run Semantic Segmantation - Experiment 1 at: https://wandb.ai/nizaanth-raja/Semantic%20Segmentation/runs/5txcj61m
+wandb: ⭐️ View project at: https://wandb.ai/nizaanth-raja/Semantic%20Segmentation
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240627_051222-5txcj61m/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.

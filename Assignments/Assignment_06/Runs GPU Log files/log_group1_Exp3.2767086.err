@@ -1,0 +1,52 @@
+2024-06-27 04:32:27.648521: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-06-27 04:32:27.649236: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-06-27 04:32:27.650896: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-06-27 04:32:27.660203: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-27 04:32:28.912812: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-06-27 04:37:07.418400: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15520 MB memory:  -> device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0
+2024-06-27 04:37:07.419450: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 15520 MB memory:  -> device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:84:00.0, compute capability: 6.0
+2024-06-27 04:37:07.420236: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 15520 MB memory:  -> device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 6.0
+wandb: Currently logged in as: nizaanth (nizaanth-raja). Use `wandb login --relogin` to force relogin
+wandb: Appending key for api.wandb.ai to your netrc file: /home/i1000664/.netrc
+wandb: Tracking run with wandb version 0.17.3
+wandb: Run data is saved locally in /beegfs/work/i1000664/group1/Assignment_06/wandb/run-20240627_043709-sk5t5tj6
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run Semantic Segmantation - Experiment 3 
+wandb: ⭐️ View project at https://wandb.ai/nizaanth-raja/Semantic%20Segmentation
+wandb: 🚀 View run at https://wandb.ai/nizaanth-raja/Semantic%20Segmentation/runs/sk5t5tj6
+2024-06-27 04:37:17.218361: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:961] layout failed: INVALID_ARGUMENT: Size of values 0 does not match size of permutation 4 @ fanin shape inmodel/dropout/dropout/SelectV2-2-TransposeNHWCToNCHW-LayoutOptimizer
+2024-06-27 04:37:18.413696: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:454] Loaded cuDNN version 8904
+2024-06-27 04:37:24.699878: I external/local_xla/xla/service/service.cc:168] XLA service 0x2b59f82fe3b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-06-27 04:37:24.700428: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-06-27 04:37:24.700885: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (1): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-06-27 04:37:24.701217: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (2): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-06-27 04:37:24.709150: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1719455844.895973     993 device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+wandb: - 0.003 MB of 0.003 MB uploadedwandb: \ 0.003 MB of 0.014 MB uploadedwandb: | 0.014 MB of 0.014 MB uploadedwandb: 
+wandb: Run history:
+wandb:      epoch/accuracy ▁▅▅▆▆▇▇▇█▇█
+wandb:         epoch/epoch ▁▂▂▃▄▅▅▆▇▇█
+wandb: epoch/learning_rate ▁▁▁▁▁▁▁▁▁▁▁
+wandb:          epoch/loss █▁▁▁▁▁▁▁▁▁▁
+wandb:          epoch/miou ▁▄▅▅▆▇▇▇█▇█
+wandb:  epoch/val_accuracy ▁▃▂▃▅▆▇▆██▇
+wandb:      epoch/val_loss █▅▅▅▂▂▃▂▁▂▃
+wandb:      epoch/val_miou ▁▃▂▃▆▆▇▆███
+wandb: 
+wandb: Run summary:
+wandb:      epoch/accuracy 0.72212
+wandb:         epoch/epoch 10
+wandb: epoch/learning_rate 0.001
+wandb:          epoch/loss 0.73864
+wandb:          epoch/miou 0.38099
+wandb:  epoch/val_accuracy 0.67003
+wandb:      epoch/val_loss 0.87929
+wandb:      epoch/val_miou 0.36267
+wandb: 
+wandb: 🚀 View run Semantic Segmantation - Experiment 3  at: https://wandb.ai/nizaanth-raja/Semantic%20Segmentation/runs/sk5t5tj6
+wandb: ⭐️ View project at: https://wandb.ai/nizaanth-raja/Semantic%20Segmentation
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20240627_043709-sk5t5tj6/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
