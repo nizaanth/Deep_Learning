@@ -1,0 +1,187 @@
+2024-09-04 18:06:50.140275: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-09-04 18:06:50.140685: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-09-04 18:06:50.142216: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-09-04 18:06:50.152104: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-09-04 18:06:51.406738: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-09-04 18:09:06.701085: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 15520 MB memory:  -> device: 0, name: Tesla P100-SXM2-16GB, pci bus id: 0000:05:00.0, compute capability: 6.0
+2024-09-04 18:09:06.702306: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:1 with 15520 MB memory:  -> device: 1, name: Tesla P100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 6.0
+2024-09-04 18:09:06.703054: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:2 with 15520 MB memory:  -> device: 2, name: Tesla P100-SXM2-16GB, pci bus id: 0000:84:00.0, compute capability: 6.0
+2024-09-04 18:09:06.703881: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:3 with 15520 MB memory:  -> device: 3, name: Tesla P100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 6.0
+2024-09-04 18:09:10.679590: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:454] Loaded cuDNN version 8904
+2024-09-04 18:09:21.055621: I external/local_xla/xla/service/service.cc:168] XLA service 0x2af43c07b8b0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-09-04 18:09:21.056135: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (0): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-09-04 18:09:21.056345: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (1): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-09-04 18:09:21.056573: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (2): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-09-04 18:09:21.056828: I external/local_xla/xla/service/service.cc:176]   StreamExecutor device (3): Tesla P100-SXM2-16GB, Compute Capability 6.0
+2024-09-04 18:09:21.063751: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1725466161.270580    8911 device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/_array_api.py:390: RuntimeWarning: invalid value encountered in cast
+  return x.astype(dtype, copy=copy, casting=casting)
+/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/_array_api.py:390: RuntimeWarning: invalid value encountered in cast
+  return x.astype(dtype, copy=copy, casting=casting)
+2024-09-04 18:09:56.774457: W tensorflow/core/framework/op_kernel.cc:1827] INVALID_ARGUMENT: ValueError: Input y_pred contains NaN.
+Traceback (most recent call last):
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 268, in __call__
+    return func(device, token, args)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 146, in __call__
+    outputs = self._call(device, args)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 153, in _call
+    ret = self._func(*args)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/autograph/impl/api.py", line 643, in wrapper
+    return func(*args, **kwargs)
+
+  File "/tmp/__autograph_generated_file3lrlhm_7.py", line 14, in <lambda>
+    retval_ = ag__.converted_call(ag__.ld(tf).py_function, (ag__.autograph_artifact(lambda y_true, y_pred: ag__.converted_call(ag__.ld(f1_score), (ag__.ld(y_true), ag__.ld(y_pred)), dict(average='samples', zero_division=0), fscope)), (ag__.ld(y_true), ag__.ld(y_pred)), ag__.ld(tf).double), None, fscope)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/autograph/impl/api.py", line 335, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args, **kwargs)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 1279, in f1_score
+    return fbeta_score(
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 1471, in fbeta_score
+    _, _, f, _ = precision_recall_fscore_support(
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 1775, in precision_recall_fscore_support
+    labels = _check_set_wise_labels(y_true, y_pred, average, labels, pos_label)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 1547, in _check_set_wise_labels
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 101, in _check_targets
+    type_pred = type_of_target(y_pred, input_name="y_pred")
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/multiclass.py", line 400, in type_of_target
+    _assert_all_finite(data, input_name=input_name)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/validation.py", line 126, in _assert_all_finite
+    _assert_all_finite_element_wise(
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/validation.py", line 175, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+
+ValueError: Input y_pred contains NaN.
+
+
+Traceback (most recent call last):
+  File "/beegfs/work/i1000664/group1/EfficientNet/vgg16_v8.py", line 303, in <module>
+    history = model.fit(data_gen_train, epochs=10, validation_data=data_gen_val, callbacks=callbacks)
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node EagerPyFunc_1 defined at (most recent call last):
+  File "/beegfs/work/i1000664/group1/EfficientNet/vgg16_v8.py", line 303, in <module>
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/training.py", line 1856, in fit
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/training.py", line 2296, in evaluate
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/training.py", line 4108, in run_step
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/training.py", line 2066, in test_function
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/training.py", line 2049, in step_function
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/training.py", line 2037, in run_step
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/training.py", line 1920, in test_step
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/training.py", line 1249, in compute_metrics
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/engine/compile_utils.py", line 620, in update_state
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/utils/metrics_utils.py", line 77, in decorated
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/metrics/base_metric.py", line 140, in update_state_fn
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/keras/src/metrics/base_metric.py", line 723, in update_state
+
+  File "/beegfs/work/i1000664/group1/EfficientNet/new_metrics.py", line 39, in sampled_f1_score_metric
+
+ValueError: Input y_pred contains NaN.
+Traceback (most recent call last):
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 268, in __call__
+    return func(device, token, args)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 146, in __call__
+    outputs = self._call(device, args)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 153, in _call
+    ret = self._func(*args)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/autograph/impl/api.py", line 643, in wrapper
+    return func(*args, **kwargs)
+
+  File "/tmp/__autograph_generated_file3lrlhm_7.py", line 14, in <lambda>
+    retval_ = ag__.converted_call(ag__.ld(tf).py_function, (ag__.autograph_artifact(lambda y_true, y_pred: ag__.converted_call(ag__.ld(f1_score), (ag__.ld(y_true), ag__.ld(y_pred)), dict(average='samples', zero_division=0), fscope)), (ag__.ld(y_true), ag__.ld(y_pred)), ag__.ld(tf).double), None, fscope)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/autograph/impl/api.py", line 335, in converted_call
+    return _call_unconverted(f, args, kwargs, options, False)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/tensorflow/python/autograph/impl/api.py", line 459, in _call_unconverted
+    return f(*args, **kwargs)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 1279, in f1_score
+    return fbeta_score(
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 1471, in fbeta_score
+    _, _, f, _ = precision_recall_fscore_support(
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 1775, in precision_recall_fscore_support
+    labels = _check_set_wise_labels(y_true, y_pred, average, labels, pos_label)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 1547, in _check_set_wise_labels
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/metrics/_classification.py", line 101, in _check_targets
+    type_pred = type_of_target(y_pred, input_name="y_pred")
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/multiclass.py", line 400, in type_of_target
+    _assert_all_finite(data, input_name=input_name)
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/validation.py", line 126, in _assert_all_finite
+    _assert_all_finite_element_wise(
+
+  File "/home/i1000664/anaconda3/envs/group01/lib/python3.9/site-packages/sklearn/utils/validation.py", line 175, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+
+ValueError: Input y_pred contains NaN.
+
+
+	 [[{{node EagerPyFunc_1}}]] [Op:__inference_test_function_21679]
+/var/tmp/slurmd_spool/job2927653/slurm_script: line 18:  7983 Aborted                 (core dumped) python vgg16_v8.py
